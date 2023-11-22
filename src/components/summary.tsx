@@ -11,23 +11,23 @@ export default function Summary() {
         <div className="bg-gray-700 p-8 rounded-lg">
           <header className="flex items-center pb-5 justify-between">
             <span>Entradas</span>
-            <ArrowUpCircleIcon className="w-5 h-5 text-green-500" />
+            <ArrowUpCircleIcon className="w-6 h-6 text-green-500" />
           </header>
           <strong className="flex text-xl">R$ 17.400,00</strong>
         </div>
         <div className="bg-gray-700 p-8 rounded-lg ">
           <header className="flex items-center pb-5 justify-between">
             <span>Saídas</span>
-            <ArrowDownCircleIcon className="w-5 h-5 text-red-600" />
+            <ArrowDownCircleIcon className="w-6 h-6 text-red-600" />
           </header>
           <strong className="flex text-xl">R$ 1.259,00</strong>
         </div>
-        <div className="bg-gray-700 p-8 rounded-lg">
+        <div className="bg-green-800 p-8 rounded-lg">
           <header className="flex items-center pb-5 justify-between">
-            <span>Entradas</span>
-            <CurrencyDollarIcon className="w-5 h-5 text-white" />
+            <span>Total</span>
+            <CurrencyDollarIcon className="w-6 h-6 text-white" />
           </header>
-          <strong className="flex text-xl">R$ 17.400,00</strong>
+          <strong className="flex text-xl">R$ 16.141,00</strong>
         </div>
       </div>
     </>
