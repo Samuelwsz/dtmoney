@@ -1,9 +1,10 @@
 import "./global.css"
+import Transactions from "./pages/transactions"
 
 function App() {
   return (
     <>
-      <div className="bg-slate-600">aaa</div>
+      <Transactions />
     </>
   )
 }
