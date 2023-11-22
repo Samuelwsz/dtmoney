@@ -1,3 +1,5 @@
+const { blackA, violet } = require("@radix-ui/colors")
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./src/**/*.tsx"],
@@ -5,6 +7,10 @@ export default {
     extend: {
       fontFamily: {
         roboto: ["Roboto", "Arial", "sans-serif"],
+      },
+      colors: {
+        ...blackA,
+        ...violet,
       },
     },
   },
