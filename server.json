@@ -15,6 +15,22 @@
       "category": "Alimentação",
       "price": 50,
       "createdAt": "2022-07-29T19:30:44.505Z"
+    },
+    {
+      "description": "aa",
+      "price": 1111,
+      "category": "aaaasa",
+      "type": "income",
+      "createdAt": "2023-11-23T19:01:01.241Z",
+      "id": 3
+    },
+    {
+      "description": "awq",
+      "price": 2222,
+      "category": "aa",
+      "type": "outcome",
+      "createdAt": "2023-11-23T19:02:29.396Z",
+      "id": 4
     }
   ]
 }

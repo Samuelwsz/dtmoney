@@ -1,7 +1,9 @@
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline"
 import { zodResolver } from "@hookform/resolvers/zod"
+import { useContext } from "react"
 import { useForm } from "react-hook-form"
 import * as z from "zod"
+import { TransactionsContext } from "../../contexts/TransactionsContext"
 
 const SearchFormSchema = z.object({
   query: z.string(),
@@ -10,6 +12,8 @@ const SearchFormSchema = z.object({
 type SearchFormInputs = z.infer<typeof SearchFormSchema>
 
 export default function SearchForm() {
+  const { fetchTransactions } = useContext(TransactionsContext)
+
   const {
     register,
     handleSubmit,
@@ -17,8 +21,8 @@ export default function SearchForm() {
   } = useForm<SearchFormInputs>({
     resolver: zodResolver(SearchFormSchema),
   })
-  function handleSearchTransactions(data: SearchFormInputs) {
-    console.log(data)
+  async function handleSearchTransactions(data: SearchFormInputs) {
+    await fetchTransactions(data.query)
   }
 
   return (
