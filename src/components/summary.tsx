@@ -3,8 +3,28 @@ import {
   ArrowDownCircleIcon,
   CurrencyDollarIcon,
 } from "@heroicons/react/24/solid"
+import { useContext } from "react"
+import { TransactionsContext } from "../contexts/TransactionsContext"
 
 export default function Summary() {
+  const { transactions } = useContext(TransactionsContext)
+
+  const summary = transactions.reduce(
+    (acc, transaction) => {
+      if (transaction.type === "income") {
+        acc.income += transaction.price
+      } else {
+        acc.outcome += transaction.price
+      }
+
+      return acc
+    },
+    {
+      income: 0,
+      outcome: 0,
+      total: 0,
+    }
+  )
   return (
     <>
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 text-white items-center text-center justify-center mt-[-50px] w-4/5 m-auto">
