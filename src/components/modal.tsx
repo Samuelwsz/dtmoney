@@ -11,7 +11,7 @@ export default function Modal() {
     <>
       <Dialog.Portal>
         <Dialog.Overlay className="fixed inset-0 bg-black opacity-50" />
-        <Dialog.Content className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray-700 p-8 rounded-sm shadow-md w-auto sm:w-1/2 md:w-2/5 lg:w-1/4 border-2 border-green-600">
+        <Dialog.Content className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray-700 p-8 rounded-sm shadow-md w-auto sm:w-1/2 md:w-2/5 lg:w-2/5 border-2 border-green-600">
           <Dialog.Title className="text-white text-lg font-bold mb-4">
             Nova transação
           </Dialog.Title>

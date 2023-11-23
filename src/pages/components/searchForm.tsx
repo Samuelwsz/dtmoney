@@ -7,10 +7,10 @@ export default function SearchForm() {
         <input
           type="text"
           placeholder="Busque um transação"
-          className="w-full p-1 pl-3 bg-gray-800 border border-gray-800 focus:border-green-600 outline-none text-white"
+          className="w-full p-1 pl-3 bg-gray-800 border border-gray-800 focus:border-green-600 outline-none text-white rounded-md"
         />
 
-        <button className="border-2 border-green-600 p-1 px-2 text-green-600 flex items-center">
+        <button className="border-2 border-green-600 p-1 px-2 text-green-600 flex items-center rounded-md">
           <MagnifyingGlassIcon className="w-5 h-5" /> Buscar
         </button>
       </div>
