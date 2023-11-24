@@ -8,10 +8,8 @@ import * as Dialog from "@radix-ui/react-dialog"
 import * as RadioGroup from "@radix-ui/react-radio-group"
 import { Controller, useForm } from "react-hook-form"
 import * as z from "zod"
-import { api } from "../lib/axios"
-import { useContext } from "react"
 import { TransactionsContext } from "../contexts/TransactionsContext"
-
+import { useContextSelector } from "use-context-selector"
 const newTransactionFormSchema = z.object({
   description: z.string(),
   price: z.number(),
@@ -22,7 +20,12 @@ const newTransactionFormSchema = z.object({
 type newTransactionFormInputs = z.infer<typeof newTransactionFormSchema>
 
 export default function Modal() {
-  const { createTransaction } = useContext(TransactionsContext)
+  const createTransaction = useContextSelector(
+    TransactionsContext,
+    (context) => {
+      return context.createTransaction
+    }
+  )
 
   const {
     control,
@@ -36,7 +39,7 @@ export default function Modal() {
 
   async function handleCreateNewTransaction(data: newTransactionFormInputs) {
     const { description, price, category, type } = data
-    
+
     await createTransaction({
       description,
       price,

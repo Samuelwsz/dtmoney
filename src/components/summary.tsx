@@ -8,7 +8,7 @@ import useSummary from "../hooks/useSummary"
 
 export default function Summary() {
   const summary = useSummary()
-  
+
   return (
     <>
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 text-white items-center text-center justify-center mt-[-50px] w-4/5 m-auto">
