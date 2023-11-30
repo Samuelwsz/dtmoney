@@ -37,7 +37,9 @@ export default function Transactions() {
                     {transaction.type === "outcome" && "- "}
                     {priceFormatter.format(transaction.price)}
                   </td>
-                  <td className="flex-shrink-0">{transaction.category}</td>
+                  <td className="md:w-2/4 lg:w-2/4 mb-2 lg:mb-0">
+                    {transaction.category}
+                  </td>
                   <td className="flex-shrink-0">
                     {dateFormatter.format(new Date(transaction.createdAt))}
                   </td>
