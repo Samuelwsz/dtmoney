@@ -1,43 +1,43 @@
 {
   "transactions": [
     {
-      "id": 1,
-      "description": "Desenvolvimento de site",
-      "type": "income",
-      "category": "Venda",
-      "price": 14000,
-      "createdAt": "2022-07-29T19:36:44.505Z"
-    },
-    {
-      "id": 2,
-      "description": "Hambúrguer",
-      "type": "outcome",
-      "category": "Alimentação",
+      "description": "carne",
       "price": 50,
-      "createdAt": "2022-07-29T19:30:44.505Z"
+      "category": "comida",
+      "type": "outcome",
+      "createdAt": "2023-12-01T17:21:30.966Z",
+      "id": 1
     },
     {
-      "description": "aa",
-      "price": 1111,
-      "category": "aaaasa",
+      "description": "Salario",
+      "price": 1500,
+      "category": "ganhos",
       "type": "income",
-      "createdAt": "2023-11-23T19:01:01.241Z",
+      "createdAt": "2023-12-01T17:21:52.193Z",
+      "id": 2
+    },
+    {
+      "description": "Energia",
+      "price": 200,
+      "category": "gastos",
+      "type": "outcome",
+      "createdAt": "2023-12-01T17:22:47.994Z",
       "id": 3
     },
     {
-      "description": "awq",
-      "price": 2222,
-      "category": "aa",
+      "description": "Agua",
+      "price": 150,
+      "category": "gastos",
       "type": "outcome",
-      "createdAt": "2023-11-23T19:02:29.396Z",
+      "createdAt": "2023-12-01T17:23:15.090Z",
       "id": 4
     },
     {
-      "description": "pastel",
-      "price": 10,
-      "category": "comida",
+      "description": "Lazer",
+      "price": 500,
+      "category": "gastos",
       "type": "outcome",
-      "createdAt": "2023-11-23T22:55:31.158Z",
+      "createdAt": "2023-12-01T17:23:36.304Z",
       "id": 5
     }
   ]
